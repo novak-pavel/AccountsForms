@@ -7,13 +7,30 @@ using System.Threading.Tasks;
 
 namespace AccountsForms
 {
-    class AccountManager
+    public class AccountManager
     {
         private List<UserModel> _users;
 
         public AccountManager()
         {
             _users = new List<UserModel>();
+        }
+
+        public bool Register(UserModel model)
+        {
+            return false;
+        }
+
+        public UserModel User { private set; get; }
+
+        public bool Login()
+        {
+            return false;
+        }
+
+        private void Logout()
+        {
+
         }
     }
 }
